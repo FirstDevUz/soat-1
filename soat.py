@@ -12,7 +12,7 @@ while True:
     x = datetime.datetime.now(tz=ok)
     x = x.strftime("%H:%M")
     app.send(functions.account.UpdateProfile(
-    first_name="Elbekjon ⏰"+str(x),
+    first_name="Elbekjon ⏰ "+str(x),
     about="O'zbekistonda soat: " +str(x)
     ))
     time.sleep(20)
