@@ -1,1 +1,1 @@
-worker: python pyro.py
+worker: python soat.py
