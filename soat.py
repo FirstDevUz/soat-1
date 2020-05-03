@@ -13,8 +13,12 @@ while True:
     x = x.strftime("%H:%M")
     today = datetime.datetime.today()
     y = today.strftime("%d.%m.%Y")
+    sana = datetime.today().strftime('%w')
+    sana = int(sana) - 1
+    days = ["Dushanba","Seshanba","Chorshanba","Payshanba","Juma","Shanba","Yakshanba"]
+    z = days[sana]
     app.send(functions.account.UpdateProfile(
     first_name="Elbekjon ⏰ "+str(x),
-    about="⌚️ Soat: " +str(x) + " | 📆 Kun: " + str(y) + " | 📝 Pyrogram soat."
+    about="⌚️ Soat: " +str(x) + " | 📆 Kun: " + str(y) + " 🗓 Hafta kuni: " + str(z)
     ))
     time.sleep(20)
