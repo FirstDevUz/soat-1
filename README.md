@@ -1,1 +1,1 @@
-admin: t.me/tilon
+# Soat qo'yish via pyrogram
