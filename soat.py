@@ -12,9 +12,9 @@ while True:
     x = datetime.datetime.now(tz=ok)
     x = x.strftime("%H:%M")
     today = datetime.datetime.today()
-    y = today.strftime("%m/%d/%Y")
+    y = today.strftime("%d/%m/%Y")
     app.send(functions.account.UpdateProfile(
     first_name="Elbekjon ⏰ "+str(x),
-    about="O'zbekistonda soat: " +str(x) + " kun: " + str(y)
+    about="⌚️ Soat: " +str(x) + "| 📆 Kun: " + str(y)
     ))
     time.sleep(20)
