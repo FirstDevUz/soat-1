@@ -9,17 +9,21 @@ app = Client("my_account",api_id,api_hash)
 app.start()
 while True:
     ok = pytz.timezone("Asia/Tashkent")
-    x = datetime.datetime.now(tz=ok)
-    x = x.strftime("%H:%M")
+    soat = datetime.datetime.now(tz=ok)
+    soat = soat.strftime("%H:%M")
     today = datetime.datetime.today()
-    y = today.strftime("%d.%m.%Y")
-    sana = datetime.datetime.today()
-    sana = sana.strftime('%w')
-    sana = int(sana) - 1
+    kun = today.strftime("%d")
+    yil = today.strftime("%Y")
+    oy = today.strftime("%m")
+    oy = int(oy)-1
+    month = ["yanvar","fevral","mart","aprel","may","iyun","iyul","avgust","sentabr","oktabr","noyabr","dekabr"]
+    oy = month[oy]
+    hafta = today.strftime('%w')
+    hafta = int(hafta) - 1
     days = ["Dushanba","Seshanba","Chorshanba","Payshanba","Juma","Shanba","Yakshanba"]
-    z = days[sana]
+    hafta = days[hafta]
     app.send(functions.account.UpdateProfile(
     first_name="Elbekjon ⏰ "+str(x),
-    about="⌚️ Soat: " +str(x) + " | 📆 Kun: " + str(y) + " | 🗓 Hafta kuni: " + str(z)
+    about="⌚️ Soat: " +str(soat) + " | 📆 Kun: " + str(kun) + "-" + str(oy) + " " + str(yil) + "-yil" + " | 🗓 Hafta kuni: " + str(hafta)
     ))
     time.sleep(20)
