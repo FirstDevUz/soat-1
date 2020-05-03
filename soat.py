@@ -23,6 +23,6 @@ while True:
     hafta = days[hafta]
     app.send(functions.account.UpdateProfile(
     first_name="🇺🇿 #FirstDev ⏰ "+str(soat),
-    about="⏰ " +str(soat) + " | 📆 " + str(kun) + "-" + str(oy) + " | 📅 " + str(yil) + "-yil" + " | 🗓 " + str(hafta)
+    about="⏰ " +str(soat) + " | 📆 " + str(kun) + "-" + str(oy) + " | 📅 " + str(yil) + "-yil" + " | 🗓 " + str(hafta) + " | 📝 Pyrogram profile"
     ))
     time.sleep(20)
