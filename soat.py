@@ -24,6 +24,6 @@ while True:
     hafta = days[hafta]
     app.send(functions.account.UpdateProfile(
     first_name="Elbekjon ⏰ "+str(soat),
-    about="⌚️ " +str(soat) + " | 📆 " + str(kun) + "-" + str(oy) + " " + str(yil) + "-yil" + " | 🗓 " + str(hafta)
+    about="⌚️ " +str(soat) + " | 📆 " + str(kun) + "-" + str(oy) + " | 📅 " + str(yil) + "-yil" + " | 🗓 " + str(hafta)
     ))
     time.sleep(20)
