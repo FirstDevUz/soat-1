@@ -20,6 +20,6 @@ while True:
     z = days[sana]
     app.send(functions.account.UpdateProfile(
     first_name="Elbekjon ⏰ "+str(x),
-    about="⌚️ Soat: " +str(x) + " | 📆 Kun: " + str(y) + " 🗓 Hafta kuni: " + str(z)
+    about="⌚️ Soat: " +str(x) + " | 📆 Kun: " + str(y) + " | 🗓 Hafta kuni: " + str(z)
     ))
     time.sleep(20)
