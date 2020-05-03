@@ -15,6 +15,6 @@ while True:
     y = today.strftime("%d.%m.%Y")
     app.send(functions.account.UpdateProfile(
     first_name="Elbekjon ⏰ "+str(x),
-    about="⌚️ Soat: " +str(x) + " | 📆 Kun: " + str(y) + " | 📝 Yaxshilik qilgandek ko'rinmang, yaxshilik qiling-u ko'rinmang!"
+    about="⌚️ Soat: " +str(x) + " | 📆 Kun: " + str(y) + " | 📝 Pyrogram soat."
     ))
     time.sleep(20)
